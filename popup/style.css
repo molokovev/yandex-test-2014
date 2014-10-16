@@ -1,0 +1,58 @@
+/*common*/
+.popup {
+    padding: 20px;
+    background: #eee;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    text-align: center;
+    cursor: pointer;
+    opacity: .7;
+    visibility: hidden;
+}
+
+/*first*/
+.overlay.first::before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+}
+.overlay .first {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*second*/
+.overlay .second {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*third*/
+.overlay.third {
+    display: flex;
+}
+.overlay .third {
+    margin: auto;
+}
+
+/*fourth*/
+.overlay .fourth {
+    position: absolute;
+}
