@@ -11,6 +11,7 @@
     <input type="button" data-popup="second" value="Second" />
     <input type="button" data-popup="third" value="Third" />
     <input type="button" data-popup="fourth" value="Fourth" />
+    <input type="button" data-popup="fifth" value="Fifth" />
 
     <div class="overlay first">
         <div class="popup first">
@@ -23,7 +24,7 @@
             <br>
             - needs free outer container
             <br>
-            - empty :before block can cause unexpected free space. can be solved with some hacks like font-size: 0, or negative margin
+            - empty :before block can cause unexpected free space
         </div>
     </div>
 
@@ -60,6 +61,21 @@
             <br>
             - a lot of js code.. and needs a little bit more to work proper on resize
         </div>
+    </div>
+
+    <div class="overlay fifth">
+            <div class="table-cell">
+                <div class="popup fifth">
+                    Centered with display table-cell.
+                    <br>
+                    <br>
+                    + simple
+                    <br>
+                    + cross-browser
+                    <br>
+                    - needs outer blocks
+                </div>
+            </div>
     </div>
 
 </body>

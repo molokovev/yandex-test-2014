@@ -20,6 +20,10 @@
     visibility: hidden;
 }
 
+input {
+    cursor: pointer;
+}
+
 /*first*/
 .overlay.first::before {
     display: inline-block;
@@ -55,4 +59,18 @@
 /*fourth*/
 .overlay .fourth {
     position: absolute;
+}
+
+/*fifth*/
+.overlay.fifth {
+    display: table;
+    vertical-align: middle;
+}
+.overlay .table-cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.overlay .fifth {
+    display: inline-block;
 }
